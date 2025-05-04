@@ -49,6 +49,18 @@ const projects = [
     description: "Node.js-sovellus kontitettuna Dockerilla ja ajettuna AWS Elastic Container Servicessä skaalautuvuutta varten.",
     link: "docs/docker-ecs-guide.pdf",
     label: "Tutustu oppaaseen",
+  },
+  {
+    title: "Coming Soon Project 1",
+    description: "Tulossa pian – uusi projekti työn alla.",
+    link: "#",
+    label: "Tulossa"
+  },
+  {
+    title: "Coming Soon Project 2",
+    description: "Tulossa pian – uusi projekti työn alla.",
+    link: "#",
+    label: "Tulossa"
   }
 ];
 
