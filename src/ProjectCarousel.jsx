@@ -92,10 +92,13 @@ const ProjectCarousel = () => {
       <div className="absolute top-0 left-0 w-full h-3/5 bg-gradient-to-b from-[#0f1f0f] via-[#001f0f] to-transparent dark:from-gray-800 dark:via-gray-900 dark:to-transparent transition-transform duration-500 ease-in-out origin-bottom group-hover:-translate-y-[120%] z-0 rounded-xl" />
       <div className="absolute bottom-0 left-0 w-full h-3/5 bg-gradient-to-t from-[#0f1f0f] via-[#001f0f] to-transparent dark:from-gray-800 dark:via-gray-900 dark:to-transparent transition-transform duration-500 ease-in-out origin-top group-hover:translate-y-[120%] z-0 rounded-xl" />
 
-      <div id="project-box" className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-700 z-20">
+      <div
+        id="project-box"
+        className="absolute top-0 left-0 right-0 bottom-0 h-[700px] p-4 flex items-start justify-center opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-700 z-20 overflow-y-auto scrollbar-thin scrollbar-thumb-green-600/40 hover:scrollbar-thumb-green-400/60"
+      >
         <div className="w-full max-w-6xl bg-gradient-to-br from-black via-[#001f0f] to-black dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 p-6 shadow-2xl border border-green-500/20 backdrop-blur-md rounded-xl">
           <h2 className="text-2xl font-bold text-green-400 mb-4 text-center">Projektit</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-h-[70vh] overflow-y-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
             {projects.map((project, index) => (
               <div key={index} className="bg-[#0f1f0f] dark:bg-gray-800 p-4 rounded shadow border border-green-500/10">
                 <h3 className="text-lg font-semibold text-green-400">{project.title}</h3>
