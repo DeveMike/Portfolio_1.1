@@ -5,26 +5,26 @@ const projects = [
   {
     title: "WordPress Online Store",
     description: "Suunniteltu ja rakennettu lisäravinneverkkokauppa WordPressillä. Käyttäjäystävällinen ulkoasu ja helppo maksuprosessi.",
-    link: "docs/S&H.pdf",
+    link: "./docs/S&H.pdf",
     label: "Katso esite (PDF)",
   },
   {
     title: "Fitness Class Booking System",
     description: "HTML, CSS, JS, PHP ja MySQL-pohjainen ajanvarausjärjestelmä asiakkaille ja ohjaajille.",
-    link: "docs/SH_recervation_system.pdf",
+    link: "./docs/SH_recervation_system.pdf",
     label: "Tutustu dokumentaatioon",
   },
   {
     title: "Adobe Premiere Trailer",
     description: "Trailerin editointi Adobe Premiere Pro:lla. Näyttävä visuaalinen demo.",
-    link: "pic/Movien trailer THE END.mp4",
+    link: "./pic/Movien trailer THE END.mp4",
     label: "Katso video",
     isVideo: true,
   },
   {
     title: "Logo – Adobe Illustrator",
     description: "Kuvitteellinen logo suunniteltu Adobe Illustratorilla.",
-    link: "docs/artb.pdf",
+    link: "./docs/artb.pdf",
     label: "Lataa PDF",
   },
   {
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "DigitalOcean VPS Backend",
     description: "Node.js backend-palvelin asennettuna DigitalOcean-pilvipalveluun. SSH-yhteys, npm/express-sovellus.",
-    link: "#",
+    link: null,
     label: "Kuvaus tulossa",
   },
   {
@@ -48,43 +48,43 @@ const projects = [
   {
     title: "AWS S3 Static Website",
     description: "Stattinen verkkosivusto isännöity Amazon S3:ssa, julkinen pääsy ja bucketin asetukset konfiguroitu.",
-    link: "#",
+    link: null,
     label: "Kuvaus tulossa",
   },
   {
     title: "Azure AI Image Analysis",
     description: "Python-skripti, joka analysoi kuvia käyttäen Azure Computer Vision API:a.",
-    link: "#",
+    link: null,
     label: "Kuvaus tulossa",
   },
   {
     title: "Azure Speech-to-Text",
     description: "Äänestä tekstiksi -sovellus Azure Cognitive Services -palvelulla ja Pythonilla.",
-    link: "#",
+    link: null,
     label: "Kuvaus tulossa",
   },
   {
     title: "RPA Script with Puppeteer",
     description: "Node.js-skripti, joka automatisoi reittihakuja HSL:n sivustolla Puppeteerilla.",
-    link: "#",
+    link: null,
     label: "Kuvaus tulossa",
   },
   {
     title: "GitHub Actions CI Tests",
     description: "CI-putki Jest-testaukselle Node.js-projektissa GitHub Actionseilla.",
-    link: "#",
+    link: null,
     label: "Kuvaus tulossa",
   },
   {
     title: "Render.com Auto Deploy",
     description: "Node.js-sovelluksen jatkuva julkaisu Render.comin ja GitHubin avulla.",
-    link: "#",
+    link: null,
     label: "Kuvaus tulossa",
   },
   {
     title: "API Testing with Robot Framework",
     description: "Sään API-testit Robot Frameworkilla. Tulokset lokiin ja HTML-raporttiin.",
-    link: "#",
+    link: null,
     label: "Kuvaus tulossa",
   }
 ];
@@ -112,10 +112,12 @@ const ProjectsPage = () => {
               <video controls className="w-full rounded">
                 <source src={project.link} type="video/mp4" />
               </video>
-            ) : (
+            ) : project.link ? (
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block text-white bg-purple-600 hover:bg-purple-500 px-4 py-1 rounded">
                 {project.label}
               </a>
+            ) : (
+              <span className="inline-block text-gray-500 px-4 py-1 rounded">{project.label}</span>
             )}
           </div>
         ))}

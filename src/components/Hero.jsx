@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const Hero = () => (
-  <section id="hero" className="min-h-screen flex items-center justify-center px-4 md:px-16 dark:text-white text-gray-900">
+  <section id="hero" className="min-h-screen flex items-center justify-center px-4 md:px-16 dark:text-white text-gray-900 pt-40 md:pt-0">
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -18,7 +18,7 @@ const Hero = () => (
           style={{ objectPosition: '30% center' }}
         />
       </div>
-      <div className="text-center md:text-left space-y-4 bg-black/40 dark:bg-black/40 bg-white/30 p-3 md:p-6 rounded-xl backdrop-blur-sm shadow-lg w-full md:max-w-2xl">
+      <div className="text-center md:text-left space-y-4 bg-black/30 dark:bg-black/30 bg-white/30 p-3 md:p-6 rounded-xl backdrop-blur-sm shadow-lg w-full md:max-w-2xl">
         <h1 className="text-lg md:text-2xl font-extrabold">
           Hei, olen Mikko – tervetuloa portfolio-sivulleni!
         </h1>
