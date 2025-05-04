@@ -5,7 +5,7 @@ const skills = [
   { name: "HTML", icon: "html.png" },
   { name: "CSS", icon: "css.png" },
   { name: "JavaScript", icon: "javascript.png" },
-  { name: "Java", icon: "Java.svg.png"},
+  { name: "Java", icon: "Java.svg.png" },
   { name: "Python", icon: "python-logo.svg" },
   { name: "C++", icon: "c+.png" },
   { name: "MySQL", icon: "Mysql.png" },
@@ -47,7 +47,7 @@ const Skills = () => (
             <div key={index} className="flex flex-col items-center space-y-2 w-20">
               {typeof skill.icon === "string" ? (
                 <img
-                  src={`/pic/${skill.icon}`}
+                  src={`./pic/${skill.icon}`}
                   alt={skill.name}
                   className="w-14 h-14 object-contain transition-transform hover:scale-110"
                 />

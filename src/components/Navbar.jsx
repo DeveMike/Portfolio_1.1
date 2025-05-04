@@ -34,8 +34,8 @@ const Navbar = () => {
       darkMode ? 'bg-black bg-opacity-80 text-white' : 'bg-white bg-opacity-80 text-gray-900'
     }`}>
       <div className="flex items-center space-x-3">
-        <img src="/pic/DevemikeLogo.jpg" alt="Logo" className="w-14 h-14 rounded-full" />
-        <span className="font-bold text-lg bg-[url('/pic/matrix.jpg')] bg-cover px-3 py-1 rounded text-white">
+        <img src="/Portfolio_1.1/pic/DevemikeLogo.jpg" alt="Logo" className="w-14 h-14 rounded-full" />
+        <span className="font-bold text-lg bg-[url('/Portfolio_1.1/pic/matrix.jpg')] bg-cover px-3 py-1 rounded text-white">
           Mihail Rulinski
         </span>
       </div>

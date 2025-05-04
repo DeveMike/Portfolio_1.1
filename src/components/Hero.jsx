@@ -12,7 +12,7 @@ const Hero = () => (
     >
       <div className="flex-shrink-0">
         <img
-          src="/pic/test.jpg"
+          src="/Portfolio_1.1/pic/test.jpg"
           alt="Mihail Rulinski"
           className="w-60 h-60 md:w-[400px] md:h-[400px] object-cover rounded-full shadow-2xl transition-transform duration-500 transform hover:scale-105 hover:-rotate-2"
           style={{ objectPosition: '30% center' }}
