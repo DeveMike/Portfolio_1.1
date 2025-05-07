@@ -29,9 +29,11 @@ const App = () => {
     );
 
     const draw = () => {
+      // Korvaa nämä --->
       ctx.fillStyle = document.documentElement.classList.contains("dark")
         ? "rgba(0, 0, 0, 0.05)"
         : "rgba(255, 255, 255, 0.05)";
+        // --- > tällä, että tausta pysyy aina mustana ja lisää valkoisen kalvon vaalea tilassa. = ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       ctx.fillStyle = "#0F0";

@@ -1,4 +1,5 @@
 import React from "react";
+import MatrixRain from "./MatrixRain";
 import { FaApple, FaGithub } from "react-icons/fa";
 
 const skills = [
@@ -37,6 +38,7 @@ const skills = [
 const Skills = () => (
   <div className="px-4 py-8">
     <div className="bg-black/60 dark:bg-gray-800/60 p-6 rounded-xl shadow-lg border border-green-500/20 transition-all duration-300 backdrop-blur-md">
+    <MatrixRain className="absolute top-0 left-0 w-full h-[600px] opacity-10 z-[-1] pointer-events-none" />
       <div className="overflow-x-auto">
         <div
           className="flex flex-wrap justify-center gap-6 py-8 dark:text-white text-gray-900 px-4

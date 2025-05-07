@@ -12,6 +12,12 @@ const Navbar = () => {
     document.documentElement.classList.toggle("dark", prefersDark);
   }, []);
 
+// Tumma tila oletuksena edelliseen useEffect-->
+// const savedTheme = localStorage.getItem("theme");
+// const isDark = savedTheme ? savedTheme === "dark" : true; // oletus on aina tumma
+// setDarkMode(isDark);
+// document.documentElement.classList.toggle("dark", isDark);
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {

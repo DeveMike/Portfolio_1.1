@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MatrixRain from "./components/MatrixRain";
 
 const projects = [
   {
@@ -65,20 +66,10 @@ const projects = [
 ];
 
 const ProjectCarousel = () => {
-  const [current, setCurrent] = useState(0);
-  const project = projects[current];
-
-  const handlePrev = () => {
-    setCurrent((prev) => (prev - 1 + projects.length) % projects.length);
-  };
-
-  const handleNext = () => {
-    setCurrent((prev) => (prev + 1) % projects.length);
-  };
+  const [current] = useState(0);
 
   return (
     <div className="relative w-full group h-[200px] hover:h-[700px] transition-all duration-700 ease-in-out overflow-hidden mt-10">
-      {/* Hoverable area with visible prompt */}
       <div
         role="button"
         tabIndex={0}
@@ -92,15 +83,20 @@ const ProjectCarousel = () => {
       <div className="absolute top-0 left-0 w-full h-3/5 bg-gradient-to-b from-[#0f1f0f] via-[#001f0f] to-transparent dark:from-gray-800 dark:via-gray-900 dark:to-transparent transition-transform duration-500 ease-in-out origin-bottom group-hover:-translate-y-[120%] z-0 rounded-xl" />
       <div className="absolute bottom-0 left-0 w-full h-3/5 bg-gradient-to-t from-[#0f1f0f] via-[#001f0f] to-transparent dark:from-gray-800 dark:via-gray-900 dark:to-transparent transition-transform duration-500 ease-in-out origin-top group-hover:translate-y-[120%] z-0 rounded-xl" />
 
+      <MatrixRain className="absolute top-0 left-0 w-full h-[700px] opacity-10 z-0 pointer-events-none" />
+
       <div
         id="project-box"
-        className="absolute top-0 left-0 right-0 bottom-0 h-[700px] p-4 flex items-start justify-center opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-700 z-20 overflow-y-auto scrollbar-thin scrollbar-thumb-green-600/40 hover:scrollbar-thumb-green-400/60"
+        className="absolute top-0 left-0 right-0 bottom-0 h-[700px] p-4 flex items-start justify-center opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-700 z-20 overflow-y-auto scrollbar-thin scrollbar-thumb-green-600/40 hover:scrollbar-thumb-green-400/60 relative bg-black/60 backdrop-blur-sm"
       >
         <div className="w-full max-w-6xl bg-gradient-to-br from-black via-[#001f0f] to-black dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 p-6 shadow-2xl border border-green-500/20 backdrop-blur-md rounded-xl">
           <h2 className="text-2xl font-bold text-green-400 mb-4 text-center">Projektit</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
             {projects.map((project, index) => (
-              <div key={index} className="bg-[#0f1f0f] dark:bg-gray-800 p-4 rounded shadow border border-green-500/10">
+              <div
+                key={index}
+                className="bg-[#0f1f0f] dark:bg-gray-800 p-4 rounded shadow border border-green-500/10 transform hover:scale-[1.02] hover:-translate-y-1 transition duration-300 shadow-[0_0_10px_#00ff00] hover:shadow-[0_0_20px_#00ff00]"
+              >
                 <h3 className="text-lg font-semibold text-green-400">{project.title}</h3>
                 <p className="text-sm text-green-200 mb-2">{project.description}</p>
                 {project.isVideo ? (
