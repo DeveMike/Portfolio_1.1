@@ -20,7 +20,7 @@ const Hero = () => (
       </div>
       <div className="text-center md:text-left space-y-4 bg-black/30 dark:bg-black/30 bg-white/30 p-3 md:p-6 rounded-xl backdrop-blur-sm shadow-lg w-full md:max-w-2xl">
         <h1 className="text-lg md:text-2xl font-extrabold">
-          Hei, olen Mikko – tervetuloa portfolio-sivulleni!
+          Hei, olen Mikko – tervetuloa portfolio sivulleni!
         </h1>
         <p className="text-xs md:text-sm dark:text-gray-300 text-gray-800">
           Ennen siirtymistä IT-alalle tein lähes yhdeksän vuoden uran kalatukussa, jossa vastasin monipuolisesti asiakaspalvelusta, kalankäsittelystä, tuotannosta ja logistiikasta. Työ opetti minulle tinkimätöntä tarkkuutta, tehokkuutta ja asiakaslähtöisyyttä käytännön tasolla.
