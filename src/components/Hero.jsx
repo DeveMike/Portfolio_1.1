@@ -20,16 +20,16 @@ const Hero = () => (
       </div>
       <div className="text-center md:text-left space-y-4 bg-black/30 dark:bg-black/30 bg-white/30 p-3 md:p-6 rounded-xl backdrop-blur-sm shadow-lg w-full md:max-w-2xl">
         <h1 className="text-lg md:text-2xl font-extrabold">
-          Hei, olen Mikko – tervetuloa portfolio sivulleni!
+          Tervetuloa sivulleni!
         </h1>
         <p className="text-xs md:text-sm dark:text-gray-300 text-gray-800">
-          Ennen siirtymistä IT-alalle tein lähes yhdeksän vuoden uran kalatukussa, jossa vastasin monipuolisesti asiakaspalvelusta, kalankäsittelystä, tuotannosta ja logistiikasta. Työ opetti minulle tinkimätöntä tarkkuutta, tehokkuutta ja asiakaslähtöisyyttä käytännön tasolla.
+          Olen asiakaspalvelun ammattilainen, jolla on vuosien kokemus asiakkaiden tarpeiden tunnistamisesta ja niihin toimivien ratkaisujen löytämisestä. Minulla on laaja käytännön tausta erilaisista työtehtävistä, joissa ongelmanratkaisu ja vastuunotto ovat olleet keskiössä.
           <br /><br />
-          Tämän jälkeen kouluttauduin web-ohjelmistokehittäjäksi ja jatkoin opintojani ICT-insinööriksi, joita suoritan parhaillani toista vuotta. Opintojeni aikana olen ollut mukana muun muassa Arduino-pohjaisen pelin sekä C++/Node/MySQL-pohjaisen pankkiautomaattisovelluksen kehittämisessä. Suoritin myös näyttötöinä WordPress-verkkokaupan sekä täysin koodatun kuntosalisivuston, jossa oli ajanvarausjärjestelmä.
+          Opiskelen tieto- ja viestintätekniikan insinööriksi ja minulla on kokemusta sovelluskehityksestä, pilvipalveluista sekä monipuolisesta teknisestä ongelmanratkaisusta tietotekniikan parissa. Olen työskennellyt web-kehityksen, ohjelmistojen testauksen ja järjestelmien kehittämisen parissa erilaisten projektien kautta.
           <br /><br />
-          Tällä hetkellä toimin ruokatorivastaavana ja tarjoan sivutoimisesti IT-palveluita yksityishenkilöille, pienyrityksille ja yhdistyksille.
+          Full-stack-kehittäjänä pystyn viemään sovelluksen suunnittelusta valmiiksi kokonaisuudeksi, joka hyödyntää tietokantoja, rajapintoja ja pilvipalveluita.
           <br /><br />
-          Erityisosaamistani ovat web-kehitys, ohjelmistojen testaus ja tekninen ongelmanratkaisu. Tällä hetkellä keskityn erityisesti Pythoniin, JavaScriptiin, Node.js:ään, tietokantoihin, pilvipalveluihin ja tekoälyn hyödyntämiseen rajapinnoissa.
+          Tarjoan sivutoimisesti IT-palveluita yksityishenkilöille, pienyrityksille ja yhdistyksille. Ota rohkeasti yhteyttä ja selvitetään homma yhdessä!
         </p>
         <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
           <a
